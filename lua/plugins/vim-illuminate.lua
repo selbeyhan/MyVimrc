@@ -5,3 +5,4 @@ return {
     require('illuminate').configure({})
   end
 }
+-- If there is multiple instances of a variable/word, they are highlighted

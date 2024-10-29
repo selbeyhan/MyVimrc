@@ -2,7 +2,7 @@ local keymap = vim.keymap
 
 -- Directory Navigation
 keymap.set("n", "<leader>m", ":NvimTreeFocus<CR>", { noremap = true, silent = true})
-keymap.set("n", "<leader>f", ":NvimTreeToggle<CR>", { noremap = true, silent = true})
+keymap.set("n", "<leader>F", ":NvimTreeToggle<CR>", { noremap = true, silent = true})
 keymap.set("n", "<leader>ca", ":NvimTreeCollapse<CR>", { noremap = true, silent = true})
 keymap.set("n", "<leader>cb", ":NvimTreeCollapseKeepBuffers<CR>", { noremap = true, silent = true})
 
@@ -24,3 +24,12 @@ keymap.set("v", ">", ">gv")
 -- Commenting
 vim.api.nvim_set_keymap("n", "<C-/>", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<C-/>", "gcc", { noremap = false })
+
+-- Deleting
+keymap.set("n", "Q", "\"_\"", { noremap = true, silent = true})
+
+-- Terminal
+keymap.set("n", "<leader>t", ":terminal<CR>", { noremap = true, silent = true})
+keymap.set("n", "<leader>T", ":split<CR> :terminal<CR> :resize 10<CR>", { noremap = true, silent = true})
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
+
