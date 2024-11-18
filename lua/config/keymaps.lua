@@ -5,6 +5,7 @@ keymap.set("n", "<leader>m", ":NvimTreeFocus<CR>", { noremap = true, silent = tr
 keymap.set("n", "<leader>F", ":NvimTreeToggle<CR>", { noremap = true, silent = true})
 keymap.set("n", "<leader>ca", ":NvimTreeCollapse<CR>", { noremap = true, silent = true})
 keymap.set("n", "<leader>cb", ":NvimTreeCollapseKeepBuffers<CR>", { noremap = true, silent = true})
+keymap.set("i", "jk", "<esc>") 
 
 -- Pane and Window Navigation
 keymap.set("n", "<C-h>", "<C-w>h", opts) -- Navigate Left
