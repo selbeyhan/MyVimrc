@@ -33,4 +33,5 @@ keymap.set("n", "Q", "\"_\"", { noremap = true, silent = true})
 keymap.set("n", "<leader>t", ":terminal<CR>", { noremap = true, silent = true})
 keymap.set("n", "<leader>T", ":split<CR> :terminal<CR> :resize 10<CR>", { noremap = true, silent = true})
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "jk", "<C-\\><C-N>", { noremap = true, silent = true })
 
