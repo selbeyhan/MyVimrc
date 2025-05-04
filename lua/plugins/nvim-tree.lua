@@ -3,7 +3,7 @@ return {
   lazy = false,
   config = {
     filters = {
-      dotfiles = true,
+      dotfiles = false,
     },
     view = {
       adaptive_size = true,
