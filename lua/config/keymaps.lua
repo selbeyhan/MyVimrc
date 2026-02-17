@@ -27,7 +27,12 @@ vim.api.nvim_set_keymap("n", "<C-/>", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<C-/>", "gcc", { noremap = false })
 
 -- Deleting
-keymap.set("n", "Q", "\"_\"", { noremap = true, silent = true})
+-- keymap.set("n", "Q", "\"_\"", { noremap = true, silent = true})
+-- Only "x" copies into clipboard
+vim.keymap.set("n", "d", '"_d')
+vim.keymap.set("n", "dd", '"_dd')
+vim.keymap.set("n", "D", '"_D')
+-- vim.keymap.set("n", "x", '"_x')
 
 -- Terminal
 keymap.set("n", "<leader>t", ":terminal<CR>", { noremap = true, silent = true})
